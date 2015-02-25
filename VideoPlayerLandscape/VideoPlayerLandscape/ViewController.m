@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PlayerViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)playVideo:(id)sender {
+    
+    PlayerViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PlayerViewController class])];
+    
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

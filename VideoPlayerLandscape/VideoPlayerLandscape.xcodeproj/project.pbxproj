@@ -14,6 +14,8 @@
 		0D8F51461A9D1E5300A6C02D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8F51451A9D1E5300A6C02D /* Images.xcassets */; };
 		0D8F51491A9D1E5300A6C02D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8F51471A9D1E5300A6C02D /* LaunchScreen.xib */; };
 		0D8F51551A9D1E5300A6C02D /* VideoPlayerLandscapeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F51541A9D1E5300A6C02D /* VideoPlayerLandscapeTests.m */; };
+		8962A91C1A9DCB38000A5107 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8962A91B1A9DCB38000A5107 /* PlayerViewController.m */; };
+		8962A9201A9DFBCD000A5107 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8962A91F1A9DFBCD000A5107 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		0D8F514E1A9D1E5300A6C02D /* VideoPlayerLandscapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerLandscapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8F51531A9D1E5300A6C02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8F51541A9D1E5300A6C02D /* VideoPlayerLandscapeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerLandscapeTests.m; sourceTree = "<group>"; };
+		8962A91A1A9DCB38000A5107 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		8962A91B1A9DCB38000A5107 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		8962A91F1A9DFBCD000A5107 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8962A9201A9DFBCD000A5107 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		0D8F512C1A9D1E5200A6C02D = {
 			isa = PBXGroup;
 			children = (
+				8962A91F1A9DFBCD000A5107 /* MediaPlayer.framework */,
 				0D8F51371A9D1E5300A6C02D /* VideoPlayerLandscape */,
 				0D8F51511A9D1E5300A6C02D /* VideoPlayerLandscapeTests */,
 				0D8F51361A9D1E5300A6C02D /* Products */,
@@ -89,6 +96,8 @@
 				0D8F51451A9D1E5300A6C02D /* Images.xcassets */,
 				0D8F51471A9D1E5300A6C02D /* LaunchScreen.xib */,
 				0D8F51381A9D1E5300A6C02D /* Supporting Files */,
+				8962A91A1A9DCB38000A5107 /* PlayerViewController.h */,
+				8962A91B1A9DCB38000A5107 /* PlayerViewController.m */,
 			);
 			path = VideoPlayerLandscape;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 				TargetAttributes = {
 					0D8F51341A9D1E5200A6C02D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Q782336LS7;
 					};
 					0D8F514D1A9D1E5300A6C02D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -220,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D8F51411A9D1E5300A6C02D /* ViewController.m in Sources */,
+				8962A91C1A9DCB38000A5107 /* PlayerViewController.m in Sources */,
 				0D8F513E1A9D1E5300A6C02D /* AppDelegate.m in Sources */,
 				0D8F513B1A9D1E5300A6C02D /* main.m in Sources */,
 			);
@@ -412,6 +423,7 @@
 				0D8F515A1A9D1E5300A6C02D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D8F515B1A9D1E5300A6C02D /* Build configuration list for PBXNativeTarget "VideoPlayerLandscapeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +432,7 @@
 				0D8F515D1A9D1E5300A6C02D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
