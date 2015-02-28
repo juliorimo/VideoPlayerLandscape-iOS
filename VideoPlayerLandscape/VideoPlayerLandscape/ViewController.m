@@ -27,8 +27,10 @@
 
 - (IBAction)playVideo:(id)sender {
     
+    //Player
     PlayerViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PlayerViewController class])];
     
+    //present
     [self presentViewController:viewController animated:YES completion:nil];
 }
 
